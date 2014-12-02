@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/home_root"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <LinearLayout style="@style/ActionBarCompat" />
+  <org.quizpoll.ui.widget.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    <Button 
+        android:id="@+id/home_btn_games" 
+        style="@style/DashboardButton"
+        android:text="@string/quiz_games" 
+        android:drawableTop="@drawable/home_btn_games" 
+        android:onClick="gamesClicked"/>
+    <Button 
+        android:id="@+id/home_btn_poll" 
+        style="@style/DashboardButton"
+        android:text="@string/polling" 
+        android:drawableTop="@drawable/home_btn_polling"
+        android:onClick="pollingClicked" />
+  </org.quizpoll.ui.widget.DashboardLayout>
+</LinearLayout>
